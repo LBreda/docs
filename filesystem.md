@@ -288,6 +288,8 @@ The `put` method may be used to store file contents on a disk. You may also pass
 
     Storage::put('file.jpg', $resource);
 
+If the file is a resource with its own filename (e.g. a UploadedFile), the resource's filename will be used, and the first parameter is used as a directory path.
+
 <a name="automatic-streaming"></a>
 #### Automatic Streaming
 
